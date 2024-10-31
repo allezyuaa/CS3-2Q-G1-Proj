@@ -3,7 +3,52 @@
 
 	<head>
 		<title>Safe Hub</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<style>
+			body {
+				background-color: black;
+			}
+			header img {
+  				justify-content: center;
+			}
+
+			nav {
+  				text-align: center;
+			}
+
+			nav ul li {
+  				display: inline;
+  				list-style-type: none;
+			}
+
+			nav ul li a {
+  				color: orange;
+  				text-decoration: none
+			}
+
+			nav ul li a.state {
+  				padding: 10px;
+  				font-family: Segoe UI;
+  				color: orange;
+  				text-decoration: none;
+			}
+         
+			nav ul li a.state:link {
+  				background: black;
+			}
+         
+			nav ul li a.state:visited {
+  				background: white;
+			}
+         
+			nav ul li a.state:hover {
+  				background: orange;
+				color: black;
+			}
+         
+			nav ul li a.state:active {
+  				background: grey;
+			}
+		</style>
 	<head/>
 	
 	<body>
@@ -13,9 +58,9 @@
 
     		<nav>
      			<ul>
-        			<li><a href="#">Home</a></li>
-        			<li><a href="#">About</a></li>
-        			<li><a href="#">Contact</a></li>
+        			<li><a class="state" href="#">Home</a></li>
+        			<li><a class="state" href="#">About</a></li>
+        			<li><a class="state" href="#">Contact</a></li>
       			</ul>
     		</nav>
 
