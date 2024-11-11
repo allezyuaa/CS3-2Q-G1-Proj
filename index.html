@@ -158,34 +158,23 @@
         			margin-bottom: 20px;
     			}
 
-    			.age-verification-modal button {
-				color: black;
+			.button {
         			padding: 10px 20px;
         			font-size: 1em;
         			cursor: pointer;
-        			margin: 5px;
+       				margin: 5px;
         			border: none;
         			border-radius: 4px;
-        			transition: background-color 0.3s;
+        			color: #fff;
     			}
 
-    			.confirm-btn {
+    			.yes-btn {
         			background-color: #4CAF50;
-        			color: white;
     			}
 
-    			.confirm-btn:hover {
-        			background-color: #45a049;
-    			}
-
-    			.deny-btn {
+    			.no-btn {
         			background-color: #f44336;
-        			color: white;
-    			}
-
-    			.deny-btn:hover {
-        			background-color: #d32f2f;
-    			}
+    			}		
 
 			
 			
@@ -193,14 +182,12 @@
 	<head/>
 	
 	<body>
-		<input type="checkbox" id="age-confirmation">
-
-		<div class="age-verification-overlay">
+		<div class="age-verification-overlay" id="ageVerification">
     			<div class="age-verification-modal">
         			<h1>Are you 18 or older?</h1>
         			<p>Please confirm your age to enter the site.</p>
-        			<label for="age-confirmation" class="button-label yes-btn">Yes</label>
-        			<span class="button-label no-btn">No</span>
+        			<button class="button yes-btn" onclick="enterSite()">Yes</button>
+        			<button class="button no-btn" onclick="exitSite()">No</button>
     			</div>
 		</div>
 
@@ -246,6 +233,14 @@
 				</div>
 			</div>
     		</article>
+		<script>
+    			function enterSite() {
+        			document.getElementById('ageVerification').style.display = 'none';
+    			}
+    			function exitSite() {
+        			window.location.href = 'https://www.google.com';
+    			}
+		</script>
 	</body>
 	 
 </html>
