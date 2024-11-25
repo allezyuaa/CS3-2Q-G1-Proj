@@ -87,22 +87,18 @@
             margin: 10px auto;
         }
 
-      .row {
+        .row {
             display: flex;
-            flex-wrap: wrap; /* Allows wrapping for responsive design */
-            justify-content: center; /* Centers the profiles */
-            gap: 20px; /* Adds spacing between profiles */
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            gap: 20px; 
         }
 
         .profile {
-            display: flex;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 300px; /* Each profile takes a specific width */
-            width: 100%;
-            flex-direction: column; /* Aligns content vertically within the profile */
-            text-align: center; /* Centers the text */
+            flex: 1 1 calc(20% - 20px); /* Adjust percentage for the number of profiles per row */
+            max-width: calc(20% - 20px); /* Matches the above calculation */
+            text-align: center;
+            box-sizing: border-box;
         }
 
         .img-box {
