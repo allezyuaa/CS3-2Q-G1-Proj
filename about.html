@@ -108,6 +108,7 @@
             width: 100%;
             overflow: hidden;
             border-radius: 10px;
+            transition: transform 0.3s ease;
         }
 
         .img-box img {
@@ -138,10 +139,15 @@
         .img-box a {
             color: white;
             font-size: 20px;
-            padding: 5px;
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.6); /* Background color on icons */
+            padding: 10px; /* Padding for the icon circle */
+            border-radius: 50%; /* Make the icon circular */
+            background-color: rgba(0, 0, 0, 0.6); 
             transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block; /* Ensure icons behave as inline blocks */
+            width: 40px; /* Fixed width */
+            height: 40px; /* Fixed height to make the circle */
+            text-align: center; /* Center the icon inside the circle */
+            line-height: 40px;
         }
         
         .img-box a:hover {
