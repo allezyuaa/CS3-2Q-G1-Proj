@@ -66,109 +66,90 @@
             border-radius: 50px;
             padding: 0px 10px;
         }
-/* Profile container (flexbox for alignment) */
-.team .container {
-    display: flex;
-    justify-content: space-between; /* Distribute profiles evenly */
-    flex-wrap: wrap; /* Allow wrapping if needed */
-    gap: 20px; /* Space between profile cards */
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Max width to avoid overflow */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Padding to prevent crowding at the edges */
-}
+/* Container for the team section */
+        .team .container {
+            text-align: center;
+        }
 
-/* Profile box */
-.profile {
-    text-align: center;
-    width: 200px; /* Set fixed width for profile box */
-    margin-top: 25px;
-    flex: 1; /* Allow profiles to grow and shrink if needed */
-    min-width: 200px; /* Minimum width to keep profiles from getting too small */
-}
+        .team .container h1 {
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+            padding-bottom: 10px;
+        }
 
-/* Image box styling (fixed size for profile pictures) */
-.profile .img-box {
-    position: relative;
-    width: 100%; /* Ensure it spans the full width of the profile */
-    height: 200px; /* Fixed height for profile images */
-    overflow: hidden; /* Hide overflow to maintain consistent image size */
-}
+/* Title underline styling */
+        h1:after {
+            content: ' ';
+            background: white;
+            display: block;
+            height: 3px;
+            width: 150px;
+            margin: 10px auto;
+        }
 
-.profile .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the images fill the container */
-}
+/* Flexbox layout for the profiles to be side by side */
+        .row {
+            display: flex; /* This is the key for placing the profiles in a row */
+            justify-content: space-evenly; /* Spread profiles evenly */
+            flex-wrap: wrap; /* Allow wrapping if screen size is too small */
+            gap: 30px; /* Adds space between the profiles */
+            margin-top: 30px; /* Adds some space above the profiles */
+        }
 
-/* Social media icon list styling */
-.img-box ul {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
+/* Profile styling */
+        .profile {
+            text-align: center;
+            width: 250px; /* Set the width for each profile */
+        }
 
-.img-box:hover ul {
-    opacity: 1;
-}
+        .img-box {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
 
-.img-box ul li {
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease-in-out;
-}
+        .img-box img {
+            width: 100%;
+            height: auto;
+        }
 
-.img-box ul li:hover {
-    background-color: rgba(255, 165, 0, 0.7);
-}
+        .img-box ul {
+            position: absolute;
+            bottom: 10px; /* Places icons at the bottom of the image */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-.img-box ul li i {
-    font-size: 16px; /* Adjust icon size */
-    color: white;
-}
+        .img-box:hover ul {
+            opacity: 1;
+        }
 
-/* Name and position text styling */
-.profile h2 {
-    font-size: 18px; /* Smaller font size for name */
-    font-weight: bold;
-    margin-top: 10px;
-}
+        .img-box a {
+            color: white;
+            font-size: 20px;
+        }
 
-.profile h3 {
-    font-size: 14px; /* Smaller font size for position */
-    font-weight: normal;
-    margin-top: 5px;
-}
+        .img-box ul li {
+            list-style-type: none;
+        }
 
-/* Description text styling */
-.profile p {
-    font-size: 12px; /* Smaller font size for description */
-    color: #ccc; /* Slightly lighter color for description text */
-    margin-top: 10px;
-}
+/* Styling for the profile text */
+        .profile h2, .profile h3, .profile p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
 
-/* Responsive Design: If the screen is smaller than 768px, stack profiles vertically */
-@media screen and (max-width: 768px) {
-    .team .container {
-        flex-direction: column; /* Stack profiles vertically on small screens */
-        align-items: center; /* Center the items */
-    }
-    .profile {
-        width: 100%; /* Let profiles take up full width on small screens */
-        margin-bottom: 20px; /* Space between stacked profiles */
-    }
-}
+        .profile h2 {
+            font-size: 18px; /* Larger font size for name */
+            font-weight: bold;
+        }
+
 
 
     </style>
