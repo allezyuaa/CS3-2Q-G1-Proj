@@ -21,7 +21,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0px 20px; /* Adjusted padding to make space from sides */
+            padding: 0px 20px;
         }
 
         nav ul {
@@ -68,7 +68,7 @@
         }
 
         .team {
-            margin-top: 40px; /* Increase top margin for more space */
+            margin-top: 40px;
         }
 
         .team .container {
@@ -105,13 +105,14 @@
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            gap: 40px; /* Increased gap to add more space between profile boxes */
+            gap: 30px; /* Adjusted gap for better spacing */
             margin-top: 30px;
         }
 
         .profile {
             text-align: center;
-            width: 200px; /* Made profiles smaller */
+            width: 200px; /* Adjusted profile width */
+            margin: 0 10px; /* Ensuring equal space between profiles */
         }
 
         .img-box {
@@ -191,6 +192,12 @@
             font-weight: normal;
         }
 
+        /* Styles for the last row to stack two profiles beneath the first row */
+        .row.two-profiles {
+            display: flex;
+            justify-content: center;
+        }
+
     </style>
 </head>
 
@@ -264,13 +271,15 @@
                 </div>
                 <div class="description">
                     <h2>Efren Corcuera</h2>
-                    <h3>Writer</h3>
+                    <h3>General Researcher</h3>
                     <p>Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew</p>
                 </div>
             </div>
 
+        </div>
+        <div class="row two-profiles">
             <!-- Profile 4 -->
-            <div class="marrix">
+            <div class="profile">
                 <div class="img-box">
                     <img src="marrix.jpg" class="img-responsive" alt="Marrix Pineda">
                     <ul>
@@ -281,15 +290,15 @@
                 </div>
                 <div class="description">
                     <h2>Marrix Pineda</h2>
-                    <h3>Assisstant Coder/Writer</h3>
+                    <h3>Secondary Coder</h3>
                     <p>Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew</p>
                 </div>
             </div>
 
             <!-- Profile 5 -->
-            <div class="noah">
+            <div class="profile">
                 <div class="img-box">
-                    <img src="noah.jpg" class="img-responsive" alt="Noah Migrino">
+                    <img src="noah.jpg" class="img-responsive" alt="Noah Mirgrino">
                     <ul>
                         <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
                         <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
@@ -297,12 +306,14 @@
                     </ul>
                 </div>
                 <div class="description">
-                    <h2>Noah Migrino</h2>
+                    <h2>Noah Mirgrino</h2>
                     <h3>Visual Media Editor</h3>
                     <p>Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew</p>
                 </div>
             </div>
         </div>
     </section>
+
 </body>
+
 </html>
