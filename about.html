@@ -1,269 +1,206 @@
 <!DOCTYPE html> 
 <html>
 
-	<head>
-		<title>Safe Hub</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-			body {
-				background-color: black;
-			}
-	
+<head>
+    <title>Safe Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
 
-			nav {
-  				height: 105px;
-				background-color: orange;
-  				text-align: center;
-  				display: flex;
-  				align-items: center;
-  				justify-content: space-between;
-  				padding: 0px 50px 0px 100px;
-			}
+        nav {
+            height: 105px;
+            background-color: orange;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 50px 0px 100px;
+        }
 
-			nav ul {
-  				display: flex;
-  				list-style-type: none;
-			}
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
 
-			nav ul li {
-  				margin: 0 5px;
-			}
+        nav ul li {
+            margin: 0 5px;
+        }
 
-			nav ul li a {
-  				color: black;
-  				text-decoration: none;
-				font-family: sans-serif;
-  				font-size: 20px;
-  				font-weight: 500;
-  				letter-spacing: 1px;
-  				padding: 8px 10px;
-  				border-radius: 5px;
-			}
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 8px 10px;
+            border-radius: 5px;
+        }
 
-			nav ul li a.state {
-  				color: black;
-				background: orange;
-			}
-         
-			nav ul li a.state:hover {
-				color: white;
-				background: black;
-			}
-         
-			nav ul li a.active {
-  				color: white;
-				background: black;
-			}
+        nav ul li a.state {
+            color: black;
+            background: orange;
+        }
 
-			*{
-				margin: 0px;
-				padding: 0px;
-				box-sizing: border-box;
-				font-family: 'Poppins', sans-serif;
-				color: white;
-			}
+        nav ul li a.state:hover {
+            color: white;
+            background: black;
+        }
 
+        nav ul li a.active {
+            color: white;
+            background: black;
+        }
 
-			input{
-				border: 3px solid black;
-				height: 40px;
-				width: 250px;
-				border-radius: 50px;
-				padding: 0px 10px;
-			}
+        input {
+            border: 3px solid black;
+            height: 40px;
+            width: 250px;
+            border-radius: 50px;
+            padding: 0px 10px;
+        }
 
-			.section .ccontainer .title {
-				text-transform: uppercase;
-				font-size: 28px;
-				text-align: center;
-			}
+        .team {
+            margin: 75px 0px;
+        }
 
-			.team{
-				margin: 75px 0px;
-			}
+        .team .container h1 {
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+            padding-bottom: 10px;
+        }
 
-			.team .container h1{
-				text-align: center;
-				font-weight: bold;
-				letter-spacing: 2px;
-				color: white;
-				padding-bottom: 10px;
-			}
+        h1:after {
+            content: ' ';
+            background: white;
+            display: block;
+            height: 3px;
+            width: 150px;
+            margin: 10px auto;
+        }
 
-			h1:after{
-				content: ' ';
-				background: white;
-				display: block;
-				height: 3px;
-				width: 150px;
-				margin: 10px auto;
-			}
-			.profile {
-				margin-top: 25px;
-			}
-			.profile .img-box{
-				opacity: 1;
-				display: block;
-				position: relative;
-			}
-			.profile h2{
-				font-size: 22px
-				font-weight: bold;
-				margin-top: 15px;
-			}
-			.profile h3{
-				font-size: 15px
-				font-weight: bold;
-				margin-top: 15px;
-			}
-			.img-box:after {
-				content: ' ';
-				opacity: 0;
-				background-color: rgba(0,0,0,0,6);
-				position: absolute;
-				right: 0;
-				left: 0;
-				top: 0;
-				bottom: 0;
-			}
-			.img-box ul {
-				margin: 0;
-				paddinf: 20px 0;
-				postion: absolute;
-				z-index: 0;
-				bottom: 0;
-				display: block;
-				left: 50%;
-				transform: translate(-50%);
-				opacity: 0;
-			}
-			.img-box ul li {
-				width: 30px;
-				height: 30px;
-				border: 1px solid white;
-				border-radius: 50%;
-				margin: 3px;
-				padding: 7px;
-				display: inline-block;
-			}
-			.img-box a {
-				color: white;
-			}
-			.img-box:hover:after {
-				opacity: 1;
-			}
-			.img-box:hover ul {
-				opacity: 1;
-			}
-			.img-box a:hover li {
-				color: orange;
-				border: 1px solid black;
-			}
-			.img-box:after, .img-box ul, .img-box ul li {
-				transition: all 0.5s ease-in-out 0s;
-			}
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
 
-			
-			
-		</style>
-	<head/>
-	
-	<body>
+        .profile {
+            display: flex;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 100%;
+        }
 
-    		<nav>
-			<header>
-      			<img src="Safe-hub.png" alt="Safe Hub logo" title="Safe Hub logo" width="250px" height="100px">
-    			</header>
-			
-     			<ul>
-        			<li><a class="state" href="home.html">Home</a></li>
-        			<li><a class="active" href="about.html">About</a></li>
-        			<li><a class="state" href="article.html">Article</a></li>
-      			</ul>
-			<div class=main>
-				<input type="text" name="box" placeholder="search...">
-				<a href="#"><i clas="fa fa-search"></i></a>
-			</div>
-    		</nav>
+        .profile .img-box {
+            flex: 1;
+            max-width: 150px;
+            margin-right: 20px;
+        }
 
-   		<section class="team">
-			<div class="container">
-				<h1> OUR TEAM </h1>
-			</div>
-			<div class="row">
-				<div class="kez profile text-center">
-					<div class="img-box">
-						<img src="kez.jpg" class="img-ressponsive">
-						<ul>
-							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
-						</ul>
-					</div>
-					<h2> Keziah Ilao </h2>
-					<h3> Main Coder</h3>
-					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
-					
-				</div>
-				<div class="aleah profile text-center">
-					<div class="img-box">
-						<img src="aleah.jpg" class="img-ressponsive">
-						<ul>
-							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
-						</ul>
-					</div>
-					<h2> Aleah Oronos </h2>
-					<h3> Writer </h3>
-					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
-					
-				</div>
-				<div class="efren profile text-center">
-					<div class="img-box">
-						<img src="efren.jpg" class="img-ressponsive">
-						<ul>
-							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
-						</ul>
-					</div>
-					<h2> Efren Corcuera</h2>
-					<h3> Writer </h3>
-					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
-					
-				</div>
-				<div class="marrix profile text-center">
-					<div class="img-box">
-						<img src="marrix.jpg" class="img-ressponsive">
-						<ul>
-							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
-						</ul>
-					</div>
-					<h2> Marriz Pineda </h2>
-					<h3> Assitant Coder/Writer </h3>
-					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
-					
-				</div>
-				<div class="noah profile text-center">
-					<div class="img-box">
-						<img src="noah.jpg" class="img-ressponsive">
-						<ul>
-							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
-						</ul>
-					</div>
-					<h2> Noah Migrino </h2>
-					<h3> Visual Media Editor </h3>
-					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
-					
-				</div>
-			</div>
-    		</section>
-	</body>
-	 
+        .profile .img-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .profile .description {
+            flex: 2;
+        }
+
+        .profile h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .profile h3 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .profile p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .img-box ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .img-box ul li {
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin: 3px;
+            padding: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-box a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <header>
+            <img src="Safe-hub.png" alt="Safe Hub logo" title="Safe Hub logo" width="250px" height="100px">
+        </header>
+
+        <ul>
+            <li><a class="state" href="home.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a class="state" href="article.html">Article</a></li>
+        </ul>
+        <div class=main>
+            <input type="text" name="box" placeholder="search...">
+            <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+    </nav>
+
+    <section class="team">
+        <div class="container">
+            <h1>OUR TEAM</h1>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="img-box">
+                    <img src="kez.jpg" class="img-responsive" alt="Keziah Ilao">
+                    <ul>
+                        <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h2>Keziah Ilao</h2>
+                    <h3>Main Coder</h3>
+                    <p>Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew</p>
+                </div>
+            </div>
+            <!-- Repeat for other profiles -->
+        </div>
+    </section>
+</body>
+
 </html>
