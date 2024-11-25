@@ -3,7 +3,6 @@
 
 	<head>
 		<title>Safe Hub</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -97,10 +96,8 @@
 			}
 
 			.content-section .button {
-				text-align: left; 
-				margin-top: 20px;
+				margine-top:70px;
 			}
-
 
 			.content-section .button a {
 				background-color: orange;
@@ -118,19 +115,85 @@
 			}
 
 
-			input {
-            			border: 3px solid black;
-            			height: 40px;
-            			width: 250px;
-            			border-radius: 50px;
-            			padding: 0px 10px;
-        		}
+			input{
+				border: 3px solid black;
+				height: 40px;
+				width: 250px;
+				border-radius: 50px;
+				padding: 0px 10px;
+			}
+
+			.age-verification-overlay {
+        			position: fixed;
+        			top: 0;
+        			left: 0;
+        			width: 100%;
+        			height: 100%;
+        			background-color: rgba(0, 0, 0, 0.8);
+				backdrop-filter: blur(8px);
+        			display: flex;
+        			align-items: center;
+        			justify-content: center;
+        			z-index: 9999;
+    			}
+
+    			.age-verification-modal {
+        			background-color: black;
+				border: 2px solid white;
+        			padding: 20px;
+        			text-align: center;
+        			width: 90%;
+        			max-width: 400px;
+        			border-radius: 8px;
+        			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   			}
+
+    			.age-verification-modal h1 {
+				color: white;
+        			font-size: 1.5em;
+        			margin-bottom: 10px;
+    			}
+
+    			.age-verification-modal p {
+				color: white;
+        			font-size: 1em;
+        			margin-bottom: 20px;
+    			}
+
+			.button {
+        			padding: 10px 20px;
+        			font-size: 1em;
+        			cursor: pointer;
+       				margin: 5px;
+        			border: none;
+        			border-radius: 4px;
+        			color: #fff;
+    			}
+
+    			.yes-btn {
+				color: black;
+        			background-color: orange;
+    			}
+
+    			.no-btn {
+				color: white;
+        			background-color: dimgrey;
+    			}		
+
 			
 			
 		</style>
 	<head/>
 	
 	<body>
+		<div class="age-verification-overlay" id="ageVerification">
+    			<div class="age-verification-modal">
+        			<h1>Are you a Porn Addict?</h1>
+        			<p>Please select an answer to enter the site.</p>
+        			<button class="button yes-btn" onclick="enterSite()">Yes</button>
+        			<button class="button no-btn" onclick="exitSite()">No</button>
+    			</div>
+		</div>
 
     		<nav>
 			<header>
@@ -140,7 +203,7 @@
      			<ul>
         			<li><a class="state" href="home.html">Home</a></li>
         			<li><a class="state" href="about.html">About</a></li>
-        			<li><a class="active" href="article.html">Article</a></li>
+				<li><a class="state" href="article.html">Article</a></li>
       			</ul>
 			<div class=main>
 				<input type="text" name="box" placeholder="search...">
@@ -173,6 +236,14 @@
 				</div>
 			</div>
     		</article>
+		<script>
+    			function enterSite() {
+        			document.getElementById('ageVerification').style.display = 'none';
+    			}
+    			function exitSite() {
+        			window.location.href = 'https://www.google.com';
+    			}
+		</script>
 	</body>
 	 
 </html>
