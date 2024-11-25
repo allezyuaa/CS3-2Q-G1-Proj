@@ -79,7 +79,90 @@
 				text-align: center;
 			}
 
+			.team{
+				margin: 75px 0px;
+			}
 
+			.team .container h1{
+				text-align: center;
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: white;
+				padding-bottom: 10px;
+			}
+
+			h1:after{
+				content: ' ';
+				background: white;
+				display: block;
+				height: 3px;
+				width: 150px;
+				margin: 10px auto;
+			}
+			.profile {
+				margin-top: 25px;
+			}
+			.profile .img-box{
+				opacity: 1;
+				display: block;
+				position: relative;
+			}
+			.profile h2{
+				font-size: 22px
+				font-weight: bold;
+				margin-top: 15px;
+			}
+			.profile h3{
+				font-size: 15px
+				font-weight: bold;
+				margin-top: 15px;
+			}
+			.img-box:after {
+				content: ' ';
+				opacity: 0;
+				background-color: rgba(0,0,0,0,6);
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.img-box ul {
+				margin: 0;
+				paddinf: 20px 0;
+				postion: absolute;
+				z-index: 0;
+				bottom: 0;
+				display: block;
+				left: 50%;
+				transform: translate(-50%);
+				opacity: 0;
+			}
+			.img-box ul li {
+				width: 30px;
+				height: 30px;
+				border: 1px solid white;
+				border-radius: 50%;
+				margin: 3px;
+				padding: 7px;
+				display: inline-block;
+			}
+			.img-box a {
+				color: white;
+			}
+			.img-box:hover:after {
+				opacity: 1;
+			}
+			.img-box:hover ul {
+				opacity: 1;
+			}
+			.img-box a:hover li {
+				color: orange;
+				border: 1px solid black;
+			}
+			.img-box:after, .img-box ul, .img-box ul li {
+				transition: all 0.5s ease-in-out 0s;
+			}
 
 			
 			
@@ -104,11 +187,83 @@
 			</div>
     		</nav>
 
-   		<article class="section">
+   		<section class="team">
 			<div class="container">
-				<h1 class="title"> The Founders </h1>
+				<h1> OUR TEAM </h1>
 			</div>
-    		</article>
+			<div class="row">
+				<div class="kez profile text-center">
+					<div class="img-box">
+						<img src="kez.jpg" class="img-ressponsive">
+						<ul>
+							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+						</ul>
+					</div>
+					<h2> Keziah Ilao </h2>
+					<h3> Main Coder</h3>
+					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
+					
+				</div>
+				<div class="aleah profile text-center">
+					<div class="img-box">
+						<img src="aleah.jpg" class="img-ressponsive">
+						<ul>
+							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+						</ul>
+					</div>
+					<h2> Aleah Oronos </h2>
+					<h3> Writer </h3>
+					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
+					
+				</div>
+				<div class="efren profile text-center">
+					<div class="img-box">
+						<img src="efren.jpg" class="img-ressponsive">
+						<ul>
+							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+						</ul>
+					</div>
+					<h2> Efren Corcuera</h2>
+					<h3> Writer </h3>
+					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
+					
+				</div>
+				<div class="marrix profile text-center">
+					<div class="img-box">
+						<img src="marrix.jpg" class="img-ressponsive">
+						<ul>
+							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+						</ul>
+					</div>
+					<h2> Marriz Pineda </h2>
+					<h3> Assitant Coder/Writer </h3>
+					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
+					
+				</div>
+				<div class="noah profile text-center">
+					<div class="img-box">
+						<img src="noah.jpg" class="img-ressponsive">
+						<ul>
+							<a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+							<a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+						</ul>
+					</div>
+					<h2> Noah Migrino </h2>
+					<h3> Visual Media Editor </h3>
+					<p> Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew </p>
+					
+				</div>
+			</div>
+    		</section>
 	</body>
 	 
 </html>
