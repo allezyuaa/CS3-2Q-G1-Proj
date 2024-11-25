@@ -21,7 +21,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0px 50px 0px 100px;
+            padding: 0px 20px; /* Adjusted padding to make space from sides */
         }
 
         nav ul {
@@ -59,32 +59,32 @@
             background: black;
         }
 
-            input {
-            		border: 3px solid black;
-            		height: 40px;
-            		width: 250px;
-            		border-radius: 50px;
-            		padding: 0px 10px;
-        	}
+        input {
+            border: 3px solid black;
+            height: 40px;
+            width: 250px;
+            border-radius: 50px;
+            padding: 0px 10px;
+        }
 
         .team {
             margin-top: 40px; /* Increase top margin for more space */
         }
-/* Container for the team section */
+
         .team .container {
             text-align: center;
         }
 
         .team .container h1 {
             text-align: center;
-            font-weight: 700; /* Lighter weight for thinner text */
-            font-size: 40px;  /* Larger font size */
+            font-weight: 700;
+            font-size: 40px;
             letter-spacing: 2px;
             color: white;
-            padding-bottom: 10px; /* Adds space around the name */
-            margin-bottom: 15px; /* Add space below the title */
-            text-transform: uppercase; /* Make the text uppercase for emphasis */
-            font-family: 'Poppins', sans-serif; /* Elegant font family */
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
@@ -92,29 +92,26 @@
             content: ' ';
             background: orange;
             display: block;
-            height: 2px;  /* Thinner line */
+            height: 2px;
             width: 250px;
             margin: 10px auto;
         }
 
-         .team .container p {
+        .team .container p {
             margin-bottom: 15px;
         }
 
-
-/* Flexbox layout for the profiles to be side by side */
         .row {
-            display: flex; /* This is the key for placing the profiles in a row */
-            justify-content: space-evenly; /* Spread profiles evenly */
-            flex-wrap: wrap; /* Allow wrapping if screen size is too small */
-            gap: 30px; /* Adds space between the profiles */
-            margin-top: 30px; /* Adds some space above the profiles */
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 40px; /* Increased gap to add more space between profile boxes */
+            margin-top: 30px;
         }
 
-/* Profile styling */
         .profile {
             text-align: center;
-            width: 250px; /* Set the width for each profile */
+            width: 200px; /* Made profiles smaller */
         }
 
         .img-box {
@@ -130,14 +127,14 @@
             height: auto;
             transition: transform 0.3s ease;
         }
-        
+
         .img-box:hover {
-            transform: scale(1.05); /* Slightly scale the image on hover */
+            transform: scale(1.05);
         }
 
         .img-box ul {
             position: absolute;
-            bottom: 10px; /* Places icons at the bottom of the image */
+            bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -152,28 +149,27 @@
 
         .img-box a {
             color: white;
-            font-size: 18px; /* Smaller font size for the icons */
-            padding: 8px; /* Smaller padding */
-            border-radius: 50%; /* Make the icon circular */
-            background-color: rgba(0, 0, 0, 0.6); 
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.6);
             transition: background-color 0.3s ease, transform 0.3s ease;
             display: inline-block;
-            width: 20px; /* Smaller size for the circles */
-            height: 20px; /* Keep the height the same as width for circle shape */
+            width: 20px;
+            height: 20px;
             text-align: center;
             line-height: 20px;
         }
-        
+
         .img-box a:hover {
-            background-color: rgba(255, 165, 0, 0.8); /* Change background color on hover */
-            transform: scale(1.2); /* Slightly scale the icon on hover */
+            background-color: rgba(255, 165, 0, 0.8);
+            transform: scale(1.2);
         }
 
         .img-box ul li {
             list-style-type: none;
         }
 
-/* Styling for the profile text */
         .profile h2, .profile h3, .profile p {
             margin: 10px 0;
             font-size: 16px;
@@ -183,15 +179,15 @@
             font-size: 22px;
             font-weight: bold;
             margin-top: 15px;
-            padding: 5px 10px; /* Adds space around the name */
-            background-color: rgba(255, 165, 0, 0.8); /* Adjusted orange with opacity */
-            color: white; /* Set text color to white */
-            border-radius: 5px; /* Optional: round the corners of the box */
-            text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange; 
+            padding: 5px 10px;
+            background-color: rgba(255, 165, 0, 0.8);
+            color: white;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
         }
 
         .profile h3 {
-            font-size: 14px; /* Smaller font size for role */
+            font-size: 14px;
             font-weight: normal;
         }
 
@@ -274,9 +270,9 @@
             </div>
 
             <!-- Profile 4 -->
-            <div class="profile">
+            <div class="marrix">
                 <div class="img-box">
-                    <img src="marrix.jpg" class="img-responsive" alt="Marriz Pineda">
+                    <img src="marrix.jpg" class="img-responsive" alt="marrix">
                     <ul>
                         <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
                         <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
@@ -284,16 +280,16 @@
                     </ul>
                 </div>
                 <div class="description">
-                    <h2>Marriz Pineda</h2>
+                    <h2>Marrix Pineds</h2>
                     <h3>Assistant Coder/Writer</h3>
                     <p>Lorem ipsum blach canciaencoenfoe efnewnfoweifniowefnioewnf fnwioenfoew</p>
                 </div>
             </div>
 
             <!-- Profile 5 -->
-            <div class="profile">
+            <div class="noah">
                 <div class="img-box">
-                    <img src="noah.jpg" class="img-responsive" alt="Noah Migrino">
+                    <img src="noah.jpg" class="img-responsive" alt="noah">
                     <ul>
                         <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
                         <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
@@ -308,7 +304,5 @@
             </div>
         </div>
     </section>
-
 </body>
-
 </html>
