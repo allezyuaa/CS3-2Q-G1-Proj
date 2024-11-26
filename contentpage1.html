@@ -66,83 +66,47 @@
 				color: white;
 			}
 
-			.header-image {
-            			width: 100%;
-            			height: 300px;
-            			background: url('kez.jpg') no-repeat center center/cover;
-       			}
+			.header-image img {
+  				width: 100%;
+  				height: auto;
+  			display: block;
+		}
 
-        		/* Title Section */
-        		.article-header {
-            			text-align: center;
-            			padding: 20px;
-            			background-color: orange;
-            			color: black;
-        		}
+		/* Main Article Section */
+		.article-content {
+  			max-width: 800px;
+  			margin: 20px auto;
+  			padding: 0 20px;
+		}
+		.article-content h1 {
+  			font-size: 2.5em;
+  			margin-bottom: 10px;
+  			color: #FF7F00; /* Theme color: Orange */
+		}
+		.article-content .meta {
+  			font-size: 0.9em;
+  			color: #555;
+ 			margin-bottom: 20px;
+		}
+		.article-content p {
+  			font-size: 1.1em;
+  			line-height: 1.6;
+  			margin-bottom: 20px;
+		}
+		.article-content img {
+  			width: 100%;
+ 			height: auto;
+  			margin: 20px 0;
+  			border-radius: 5px;
+		}
 
-        		.article-header h1 {
-            			font-size: 36px;
-            			margin-bottom: 10px;
-            			font-weight: 700;
-            			letter-spacing: 1px;
-        		}
-
-        		.article-header p {
-            			font-size: 14px;
-            			margin: 0;
-        		}
-
-        		.article-header .author {
-            			font-style: italic;
-            			color: white;
-        		}
-
-			.article-content {
-            			padding: 20px 50px;
-            			max-width: 800px;
-            			margin: auto;
-        		}
-
-        		.article-content h2 {
-            			font-size: 28px;
-            			color: orange;
-            			margin-bottom: 15px;
-	        	}
-
-        		.article-content p {
-            			font-size: 18px;
-            			margin-bottom: 15px;
-        		}
-
-        		/* Inline images */
-        		.article-content img {
-            			display: block;
-            			width: 100%;
-            			height: auto;
-            			margin: 20px 0;
-            			border-radius: 5px;
-            			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        		}
-
-        		/* Footer (optional for additional articles or navigation links) */
-        		.footer {
-            			text-align: center;
-            			padding: 20px;
-            			background-color: black;
-            			color: white;
-            			margin-top: 30px;
-       			}
-
-        		.footer a {
-            			color: orange;
-            			text-decoration: none;
-            			font-weight: 500;
-        		}
-
-        		.footer a:hover {
-            			text-decoration: underline;
-        		}
-			
+		/* Footer */
+		footer {
+  			background-color: #000;
+  			color: #fff;
+  			text-align: center;
+  			padding: 10px 0;
+		}
 
 
 			input {
@@ -159,8 +123,9 @@
 	
 	<body>
 		
-    		<!-- Full-width Header Image -->
-    		<div class="header-image"></div>
+    		<<div class="header-image">
+      			<img src="kez.jpg" alt="Header Image">
+    		</div>
 
     		<!-- Article Title and Info -->
    		 <div class="article-header">
@@ -168,28 +133,19 @@
         		<p>Published on November 26, 2024 <span class="author">by Keziah Ilao</span></p>
     		</div>
 
-    		<!-- Article Content -->
-    		<div class="article-content">
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique, urna a dignissim interdum, neque massa
-            		feugiat erat, non dictum ligula purus sit amet neque. Fusce aliquam velit vel urna tincidunt bibendum.</p>
-        
-        		<img src="aleah.jpg" alt="Inspiring visual">
-        
-        		<h2>The Importance of Hard Work</h2>
-        		<p>Morbi tincidunt lacus at nunc aliquam, sed sodales nulla sodales. Nullam id fermentum ex. Vestibulum id quam
-            		vel est tincidunt lacinia ac sit amet lorem. Suspendisse potenti. Ut venenatis nec magna quis ultricies.</p>
-        
-        		<img src="efren.jpg" alt="Hard work imagery">
-        
-        		<p>Vivamus vel nisl at elit cursus congue. Donec nec sem id quam sodales sagittis. Sed convallis venenatis
-            		tortor, non tempus nulla ultricies ut. Nulla facilisi. Suspendisse convallis libero ut lacus auctor
-            		interdum.</p>
-    		</div>
-
-   		 <!-- Footer -->
-   		 <div class="footer">
-        		<p><a href="home.html">Back to Home</a> | <a href="article.html">More Articles</a></p>
-    		</div>
+    		<main class="article-content">
+    			<h1>Title of the Article</h1>
+    			<p class="meta">Published: November 26, 2024 | Author: John Doe</p>
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum, metus nec pulvinar placerat, erat felis tincidunt arcu, a lacinia sapien libero a urna.</p>
+    			<img src="https://via.placeholder.com/600x300" alt="Article Image">
+    			<p>Vivamus nec nulla magna. Sed ut tincidunt orci. Fusce vehicula tristique tincidunt. Suspendisse potenti. Integer feugiat neque sit amet lacus cursus bibendum.</p>
+    			<p>Suspendisse eget lorem ut ligula pharetra suscipit. Quisque elementum, nisl in faucibus fermentum, enim turpis tristique felis, sed fringilla eros libero at est.</p>
+    			<img src="https://via.placeholder.com/600x300" alt="Another Image">
+    			<p>Phasellus sodales convallis facilisis. Etiam ut libero eu lectus dictum vehicula nec in metus. Integer sit amet volutpat ipsum. Curabitur vel arcu et lacus tincidunt luctus.</p>
+  		</main>
+  		<footer>
+    			<p>&copy; 2024 Your Website. All rights reserved.</p>
+  		</footer>
 	</body>
 	 
 </html>
