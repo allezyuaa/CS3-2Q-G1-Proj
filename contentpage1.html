@@ -66,11 +66,14 @@
 				color: white;
 			}
 
-			.header-image img {
+			.header-image {
   				width: 100%;
-  				height: auto;
-  			display: block;
-		}
+  				height: 300px; /* Adjust height as needed */
+  				background-image: url('kez.jpg'); /* Replace with your image path */
+  				background-size: cover; /* Ensures the image covers the entire width */
+  				background-position: center; /* Centers the image */
+  				background-repeat: no-repeat; /* Prevents tiling */
+			}
 
 		/* Main Article Section */
 		.article-content {
@@ -136,9 +139,7 @@
 				<input type="text" name="box" placeholder="search...">
 				<a href="#"><i clas="fa fa-search"></i></a>
 			</div>
-			<div class="header-image">
-      				<img src="kez.jpg" alt="Header Image">
-    			</div>
+			<div class="header-image"></div>
     		</nav>
 		
 
