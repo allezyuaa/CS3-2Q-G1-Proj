@@ -148,7 +148,7 @@
 /* Search button */
 .search-btn {
     border: none;
-    background-color: #ff6a00; /* Orange color for the button */
+    background-color: orange;
     color: #fff; /* White icon color */
     border-radius: 50%;
     width: 30px; /* Compact size */
@@ -162,8 +162,14 @@
 }
 
 .search-btn:hover {
-    background-color: #000; /* Turns black on hover */
-    color: #fff; /* Keep icon white for contrast */
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White icon color for contrast */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Optional: Adjust button size for consistency */
+.search-btn i {
+    font-size: 1.2rem; /* Adjust the icon size */
 }
 			
 			
@@ -185,9 +191,10 @@
 			<div class="search-container">
     				<input type="text" class="search-input" placeholder="Type to search..">
     				<button class="search-btn">
-        				🔍
+        				<i class="fas fa-search"></i> <!-- Font Awesome search icon -->
     				</button>
 			</div>
+
 
     		</nav>
 
