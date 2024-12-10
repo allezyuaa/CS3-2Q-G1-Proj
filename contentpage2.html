@@ -5,206 +5,51 @@
 		<title>Safe Hub</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-			body {
-                		background-color: black;
-                		margin: 0;
-                		padding-bottom: 90px;
-                		font-family: 'Poppins', sans-serif;
-                		color: white;
-            		}
-
-            		nav {
-                		height: 105px;
-                		background-color: orange;
-                		text-align: center;
-                		display: flex;
-                		align-items: center;
-                		justify-content: space-between;
-                		padding: 0px 20px;
-            		}
-
-            		nav ul {
-                		display: flex;
-                		list-style-type: none;
-            		}
-
-            		nav ul li {
-                		margin: 0 5px;
-            		}
-
-            		nav ul li a {
-                		color: black;
-                		text-decoration: none;
-                		font-family: sans-serif;
-                		font-size: 20px;
-                		font-weight: 500;
-                		letter-spacing: 1px;
-                		padding: 8px 10px;
-                		border-radius: 5px;
-            		}
-
-            		nav ul li a.state {
-                		color: black;
-                		background: orange;
-            		}
-
-            		nav ul li a.state:hover {
-                		color: white;
-                		background: black;
-            		}
-
-            		nav ul li a.active {
-                		color: white;
-                		background: black;
-            		}
-
-			*{
-				margin: 0px;
-				padding: 0px;
-				box-sizing: border-box;
-				font-family: 'Poppins', sans-serif;
-				color: white;
-			}
-
-			.header-image {
-  				width: 100%;
-  				height: 300px; 
-  				background-image: url('contentpage2header.jpg'); 
-  				background-size: cover; 
-  				background-position: center; 
-  				background-repeat: no-repeat; 
-			}
-
-			.article-content {
-  				max-width: 800px;
-  				margin: 20px auto;
-  				padding: 0 20px;
-			}
-			.article-content h1 {
-  				font-size: 2.5em;
-  				margin-bottom: 10px;
-  				color: orange;
-			}
-			.article-content .meta {
-  				font-size: 0.9em;
-  				color: #555;
- 				margin-bottom: 20px;
-			}
-			.article-content p {
-  				font-size: 1.1em;
-  				line-height: 1.6;
-  				margin-bottom: 20px;
-			}
-			.article-content img {
-  				width: 100%;
- 				height: auto;
-  				margin: 20px 0;
-  				border-radius: 5px;
-			}
-
-			footer {
-  				background-color: #000;
-  				color: #fff;
-  				text-align: center;
-  				padding: 10px 0;
-			}
-
-
-			.search-container {
-    				display: flex;
-    				align-items: center;
-    				border-radius: 30px;
-    				background-color: #fff; 
-    				border: 2px solid #000;
-    				padding: 5px;
-    				width: 300px; 
-    				position: relative;
-			}
-
-
-			.search-input {
-    				border: none;
-    				outline: none;
-    				flex: 1;
-    				font-size: 14px; 
-    				border-radius: 30px;
-    				padding: 5px 10px;
-    				background-color: transparent;
-    				color: #000; 
-			}
-
-
-			.search-btn {
-    				border: none;
-    				background-color: orange;
-    				color: #fff; 
-    				border-radius: 50%;
-    				width: 30px; 
-    				height: 30px; 
-    				display: flex;
-    				justify-content: center;
-    				align-items: center;
-    				cursor: pointer;
-    				margin-left: 5px;
-    				transition: background-color 0.3s;
-			}
-
-			.search-btn:hover {
-    				background-color: #000; 
-    				color: #fff; 
-    				transition: background-color 0.3s ease; 
-			}
-
-			.search-btn i {
-    				font-size: 1.0rem;
-			}
-			
-			
-		</style>
+		<link rel="stylesheet" href="contentpage2.css">
 	<head/>
 	
 	<body>
-		<nav>
-			<header>
-      			<a href="home.html"><img src="Safe-hub.png" alt="Safe Hub logo" title="Safe Hub logo" width="250px" height="100px"></a>
-    			</header>
-			
-     			<ul>
-        			<li><a class="state" href="home.html">Home</a></li>
-        			<li><a class="state" href="about.html">About</a></li>
-        			<li><a class="state" href="article.html">Article</a></li>
-      			</ul>
-			<div class="search-container">
-    				<input type="text" class="search-input" placeholder="Type to search..">
-    				<button class="search-btn">
-        				<i class="fas fa-search"></i> <!-- Font Awesome search icon -->
-    				</button>
-			</div>
-    		</nav>
+    <nav>
+        <header>
+            <a href="home.html"><img src="Safe-hub.png" alt="Safe Hub logo" title="Safe Hub logo" width="250px" height="100px"></a>
+        </header>
+        <ul>
+            <li><a class="state" href="home.html">Home</a></li>
+            <li><a class="state" href="about.html">About</a></li>
+            <li><a class="state" href="article.html">Article</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Type to search..">
+            <button class="search-btn">
+                <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+            </button>
+        </div>
+    </nav>
 
-		<div class="header-image"></div>
+    <div class="header-image"></div>
 
-    		<section class="article-content">
-    			<h1>Advantages and Disadvantages of Pornography</h1>
-    			<p class="meta">Published: November 20, 2024 | Author: Efren Corcuera</p>
-    			<p><b>Masturbation</b>, a natural and normal part of human sexuality, has long been shrouded in controversy and stigma. While some view it as a harmless and healthy activity, others consider it taboo or even detrimental to ones well-being. Masturbation is a complex and multifaceted aspect of human sexuality. While it offers several benefits, excessive or compulsive masturbation can have negative consequences. </p>
-    			<p>Masturbation is the deliberate stimulation of ons own genitals, typically to achieve sexual pleasure, arousal, or orgasm. This natural and normal aspect of human sexuality is practiced by individuals of all ages, genders, and sexual orientations (Planned Parenthood, 2022). According to the American Sexual Health Association (ASHA), masturbation is a common and healthy part of human sexuality, serving as a means of self-exploration, relaxation, and sexual expression (ASHA, 2022).</p>
-    			<p>Although it may be healthy, too much can truly harm. Excessive masturbation can have negative consequences, including addiction (Psychology Today, 2018), genital irritation, injury or pain (Mayo Clinic, 2022), and desensitization (Healthline, 2020). It can exacerbate mental health conditions like depression, anxiety, and obsessive-compulsive disorder (Harvard Health Publishing, 2019), and cause feelings of guilt, shame, and low self-esteem (Journal of Sex Research, 2017). Excessive masturbation can also strain intimate relationships (The Guardian, 2019), highlighting the importance of balance, communication and mutual respect.</p>
-			<img src="masturbation.jpg" alt="Article Image">
-			<p>Pornography can serve as a catalyst for <b>Gender Exploration</b>, particularly among individuals questioning their sexual orientation or gender identity. According to Dr. Katherine Hertlein, a sex therapist, pornography provides a safe space for individuals to explore their desires without fear of judgment or rejection (Hertlein, 2017). This anonymous exploration can facilitate self-discovery, helping individuals better understand their sexual preferences and identity.</p>
+    <main>
+        <section class="article-content">
+            <h1>Advantages and Disadvantages of Pornography</h1>
+            <p class="meta">Published: November 20, 2024 | Author: Efren Corcuera</p>
+            <p><b>Masturbation</b>, a natural and normal part of human sexuality, has long been shrouded in controversy and stigma. While some view it as a harmless and healthy activity, others consider it taboo or even detrimental to ones well-being. Masturbation is a complex and multifaceted aspect of human sexuality. While it offers several benefits, excessive or compulsive masturbation can have negative consequences. </p>
+    		<p>Masturbation is the deliberate stimulation of ons own genitals, typically to achieve sexual pleasure, arousal, or orgasm. This natural and normal aspect of human sexuality is practiced by individuals of all ages, genders, and sexual orientations (Planned Parenthood, 2022). According to the American Sexual Health Association (ASHA), masturbation is a common and healthy part of human sexuality, serving as a means of self-exploration, relaxation, and sexual expression (ASHA, 2022).</p>
+    		<p>Although it may be healthy, too much can truly harm. Excessive masturbation can have negative consequences, including addiction (Psychology Today, 2018), genital irritation, injury or pain (Mayo Clinic, 2022), and desensitization (Healthline, 2020). It can exacerbate mental health conditions like depression, anxiety, and obsessive-compulsive disorder (Harvard Health Publishing, 2019), and cause feelings of guilt, shame, and low self-esteem (Journal of Sex Research, 2017). Excessive masturbation can also strain intimate relationships (The Guardian, 2019), highlighting the importance of balance, communication and mutual respect.</p>
+            <img src="masturbation.jpg" alt="Article Image">
+            <p>Pornography can serve as a catalyst for <b>Gender Exploration</b>, particularly among individuals questioning their sexual orientation or gender identity. According to Dr. Katherine Hertlein, a sex therapist, pornography provides a safe space for individuals to explore their desires without fear of judgment or rejection (Hertlein, 2017). This anonymous exploration can facilitate self-discovery, helping individuals better understand their sexual preferences and identity.</p>
 			<p>Pornography exposes viewers to diverse gender expressions, sexual orientations and relationship dynamics. This exposure can broaden one's understanding of gender and sexuality, challenging traditional norms and fostering empathy (Barker, 2013). For instance, watching porn featuring non-binary or transgender individuals can help viewers appreciate the complexity of gender identity.</p>
 			<p>While pornography has its limitations and potential drawbacks, its role in gender exploration cannot be ignored. By providing access to diverse representations of sexuality and gender, pornography can empower individuals to explore their own identities and desires. However, it's essential to approach pornography critically, recognizing its potential biases and limitations.</p>
-			<img src="genderexploration.jpg" alt="Article Image">
-			<p>Pornography can have surprising <b>Health Benefits</b>. A 2020 study published in the Journal of Sex Research found that moderate pornography consumption can reduce stress levels and improve mood (Grubbs et al., 2020). This stress relief can translate to physical health benefits, such as lower blood pressure and a healthier cardiovascular system.</p>
+            <img src="genderexploration.jpg" alt="Article Image">
+            <p>Although it may be healthy, too much can truly harm. Excessive masturbation can have negative consequences, including addiction (Psychology Today, 2018), genital irritation, injury or pain (Mayo Clinic, 2022), and desensitization (Healthline, 2020). It can exacerbate mental health conditions like depression, anxiety, and obsessive-compulsive disorder (Harvard Health Publishing, 2019), and cause feelings of guilt, shame, and low self-esteem (Journal of Sex Research, 2017). Excessive masturbation can also strain intimate relationships (The Guardian, 2019), highlighting the importance of balance, communication and mutual respect.</p><p>Pornography can have surprising <b>Health Benefits</b>. A 2020 study published in the Journal of Sex Research found that moderate pornography consumption can reduce stress levels and improve mood (Grubbs et al., 2020). This stress relief can translate to physical health benefits, such as lower blood pressure and a healthier cardiovascular system.</p>
 			<p>Pornography can promote sexual wellness by providing education and inspiration. Sex therapist Dr. Justin Lehmiller notes that pornography can help individuals explore their desires and communicate them to their partners (Lehmiller, 2021). This increased communication can lead to improved sexual satisfaction and intimacy.</p>
 			<p>Moderate consumption, defined as 1-2 hours weekly, can maximize benefits while minimizing risks (Kohut et al., 2022). By recognizing pornography's potential benefits, individuals can make informed decisions about their sexual health.</p>
-			<img src="health.jpg" alt="Article Image">
-  		</section>
-  		<footer>
-    			<p>&copy; 2024 SafeHub. All rights reserved.</p>
-  		</footer>
-	</body>
+            <img src="health.jpg" alt="Article Image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SafeHub. All rights reserved.</p>
+    </footer>
+</body>
 	 
 </html>
