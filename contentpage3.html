@@ -5,200 +5,53 @@
 		<title>Safe Hub</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-			body {
-                		background-color: black;
-                		margin: 0;
-                		padding-bottom: 90px;
-                		font-family: 'Poppins', sans-serif;
-                		color: white;
-            		}
-
-            		nav {
-                		height: 105px;
-                		background-color: orange;
-                		text-align: center;
-                		display: flex;
-                		align-items: center;
-                		justify-content: space-between;
-                		padding: 0px 20px;
-            		}
-
-            		nav ul {
-                		display: flex;
-                		list-style-type: none;
-            		}
-
-            		nav ul li {
-                		margin: 0 5px;
-            		}
-
-            		nav ul li a {
-                		color: black;
-                		text-decoration: none;
-                		font-family: sans-serif;
-                		font-size: 20px;
-                		font-weight: 500;
-                		letter-spacing: 1px;
-                		padding: 8px 10px;
-                		border-radius: 5px;
-            		}
-
-            		nav ul li a.state {
-                		color: black;
-                		background: orange;
-            		}
-
-            		nav ul li a.state:hover {
-                		color: white;
-                		background: black;
-            		}
-
-            		nav ul li a.active {
-                		color: white;
-                		background: black;
-            		}
-
-			*{
-				margin: 0px;
-				padding: 0px;
-				box-sizing: border-box;
-				font-family: 'Poppins', sans-serif;
-				color: white;
-			}
-
-			.header-image {
-  				width: 100%;
-  				height: 300px; 
-  				background-image: url('contentpage3header.jpg'); 
-  				background-size: cover; 
-  				background-position: center; 
-  				background-repeat: no-repeat; 
-			}
-
-		
-			.article-content {
-  				max-width: 800px;
-  				margin: 20px auto;
-  				padding: 0 20px;
-			}
-			.article-content h1 {
-  				font-size: 2.5em;
-  				margin-bottom: 10px;
-  				color: orange;
-			}
-			.article-content .meta {
-  				font-size: 0.9em;
-  				color: #555;
- 				margin-bottom: 20px;
-			}
-			.article-content p {
-  				font-size: 1.1em;
-  				line-height: 1.6;
-  				margin-bottom: 20px;
-			}
-			.article-content img {
-  				width: 100%;
- 				height: auto;
-  				margin: 20px 0;
-  				border-radius: 5px;
-			}
-
-			footer {
-  				background-color: #000;
-  				color: #fff;
-  				text-align: center;
-  				padding: 10px 0;
-			}
-
-
-			.search-container {
-    				display: flex;
-    				align-items: center;
-    				border-radius: 30px;
-    				background-color: #fff; 
-    				border: 2px solid #000;
-    				padding: 5px;
-    				width: 300px; 
-    				position: relative;
-			}
-
-
-			.search-input {
-    				border: none;
-    				outline: none;
-    				flex: 1;
-    				font-size: 14px; 
-    				border-radius: 30px;
-    				padding: 5px 10px;
-    				background-color: transparent;
-    				color: #000; 
-			}
-
-
-			.search-btn {
-    				border: none;
-    				background-color: orange;
-    				color: #fff; 
-    				border-radius: 50%;
-    				width: 30px; 
-    				height: 30px; 
-    				display: flex;
-    				justify-content: center;
-    				align-items: center;
-    				cursor: pointer;
-    				margin-left: 5px;
-    				transition: background-color 0.3s;
-			}
-
-			.search-btn:hover {
-    				background-color: #000; 
-    				color: #fff; 
-    				transition: background-color 0.3s ease; 
-			}
-
-			.search-btn i {
-    				font-size: 1.0rem;
-			}
-			
-			
-		</style>
+		<link rel="stylesheet" href="contentpage3.css">
 	<head/>
 	
 	<body>
-		<nav>
-			<header>
-      			<a href="home.html"><img src="Safe-hub.png" alt="Safe Hub logo" title="Safe Hub logo" width="250px" height="100px"></a>
-    			</header>
-			
-     			<ul>
-        			<li><a class="state" href="home.html">Home</a></li>
-        			<li><a class="state" href="about.html">About</a></li>
-        			<li><a class="state" href="article.html">Article</a></li>
-      			</ul>
-			<div class="search-container">
-    				<input type="text" class="search-input" placeholder="Type to search..">
-    				<button class="search-btn">
-        				<i class="fas fa-search"></i> <!-- Font Awesome search icon -->
-    				</button>
-			</div>
-    		</nav>
+    <nav>
+        <header>
+            <a href="home.html"><img src="Safe-hub.png" alt="Safe Hub logo" title="Safe Hub logo" width="250px" height="100px"></a>
+        </header>
+        <ul>
+            <li><a class="state" href="home.html">Home</a></li>
+            <li><a class="state" href="about.html">About</a></li>
+            <li><a class="state" href="article.html">Article</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Type to search..">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </nav>
 
-		<div class="header-image"></div>
+    <div class="header-image"></div>
 
-    		<section class="article-content">
-    			<h1>How To Prevent Porn Addiction?</h1>
-    			<p class="meta">Published: November 18, 2024 | Author: Marrix Pineda</p>
-    			<p>Preventing porn addiction requires self-awareness and intentional habits. Establishing a healthy relationship with pornography starts with recognizing individual triggers and limits (Grubbs et al., 2020). Set boundaries by designating "porn-free" zones and times, such as during meals or before bed. Implement website blockers or apps like Freedom or Cold Turkey to restrict access during vulnerable periods.</p>
-    			<img src="prevention.webp" alt="Article Image">
-    			<p>Open communication with partners, friends or therapists is crucial. Discussing desires, boundaries and concerns fosters accountability and emotional support (Lehmiller, 2021). Regularly assess motivations for consumption: are you seeking stress relief, boredom alleviation or genuine sexual exploration? This self-reflection helps distinguish healthy usage from compulsive behavior.</p>
-    			<p>Developing alternative coping mechanisms is essential. Engage in physical activity, creative pursuits or mindfulness practices to manage stress and emotions (Kohut et al., 2022). Cultivate meaningful relationships and hobbies to enrich life beyond screen-based activities. By proactively managing consumption and cultivating holistic well-being, individuals can minimize risks of porn addiction.</p>
-          		<img src="mechanism.jpg" alt="Article Image">
-  		</section>
-  		<footer>
-    			<p>&copy; 2024 SafeHub. All rights reserved.</p>
-  		</footer>
-	</body>
+    <main>
+        <article class="article-content">
+            <header>
+               <h1>How To Prevent Porn Addiction?</h1>
+    	       <p class="meta">Published: November 18, 2024 | Author: Marrix Pineda</p>
+            </header>
+            <section>
+                <p>Preventing porn addiction requires self-awareness and intentional habits. Establishing a healthy relationship with pornography starts with recognizing individual triggers and limits (Grubbs et al., 2020). Set boundaries by designating "porn-free" zones and times, such as during meals or before bed. Implement website blockers or apps like Freedom or Cold Turkey to restrict access during vulnerable periods.</p>
+                <img src="prevention.webp" alt="Article Image">
+            </section>
+            <section>
+                <p>Open communication with partners, friends or therapists is crucial. Discussing desires, boundaries and concerns fosters accountability and emotional support (Lehmiller, 2021). Regularly assess motivations for consumption: are you seeking stress relief, boredom alleviation or genuine sexual exploration? This self-reflection helps distinguish healthy usage from compulsive behavior.</p>
+            </section>
+            <section>
+                <p>Developing alternative coping mechanisms is essential. Engage in physical activity, creative pursuits or mindfulness practices to manage stress and emotions (Kohut et al., 2022). Cultivate meaningful relationships and hobbies to enrich life beyond screen-based activities. By proactively managing consumption and cultivating holistic well-being, individuals can minimize risks of porn addiction.</p>
+                <img src="mechanism.jpg" alt="Article Image">
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SafeHub. All rights reserved.</p>
+    </footer>
+</body>
+
 	 
 </html>
