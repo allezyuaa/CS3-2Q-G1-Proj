@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+            body {
+                	background-color: black;
+                	margin: 0;
+                	padding-bottom: 90px;
+                	font-family: 'Poppins', sans-serif;
+                	color: white;
+            	}
+
+            	nav {
+                	height: 105px;
+                	background-color: orange;
+                	text-align: center;
+                	display: flex;
+                	align-items: center;
+                	justify-content: space-between;
+                	padding: 0px 20px;
+            	}
+
+            	nav ul {
+                	display: flex;
+                	list-style-type: none;
+            	}
+
+            	nav ul li {
+                	margin: 0 5px;
+            	}
+
+            	nav ul li a {
+                	color: black;
+                	text-decoration: none;
+                	font-family: sans-serif;
+                	font-size: 20px;
+                	font-weight: 500;
+                	letter-spacing: 1px;
+                	padding: 8px 10px;
+                	border-radius: 5px;
+            	}
+
+            	nav ul li a.state {
+                	color: black;
+                	background: orange;
+            	}
+
+            	nav ul li a.state:hover {
+                	color: white;
+                	background: black;
+            	}
+
+            	nav ul li a.active {
+                	color: white;
+                	background: black;
+            	}
+
+
+			*{
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				font-family: 'Poppins', sans-serif;
+				color: white;
+			}
+
+	    		
+			.search-container {
+    				display: flex;
+    				align-items: center;
+    				border-radius: 30px;
+    				background-color: #fff; 
+    				border: 2px solid #000;
+    				padding: 5px;
+    				width: 300px; 
+    				position: relative;
+			}
+
+
+			.search-input {
+    				border: none;
+    				outline: none;
+    				flex: 1;
+    				font-size: 14px; 
+    				border-radius: 30px;
+    				padding: 5px 10px;
+    				background-color: transparent;
+    				color: #000; 
+			}
+
+
+			.search-btn {
+    				border: none;
+    				background-color: orange;
+    				color: #fff; 
+    				border-radius: 50%;
+    				width: 30px; 
+    				height: 30px; 
+    				display: flex;
+    				justify-content: center;
+    				align-items: center;
+    				cursor: pointer;
+    				margin-left: 5px;
+    				transition: background-color 0.3s;
+			}
+
+			.search-btn:hover {
+    				background-color: #000; 
+    				color: #fff; 
+    				transition: background-color 0.3s ease; 
+			}
+
+			.search-btn i {
+    				font-size: 1.0rem;
+			}
+
+            .team {
+                margin-top: 40px;
+            }
+
+            .team .container {
+                text-align: center;
+            }
+
+            .team .container h1 {
+                text-align: center;
+                font-weight: 700;
+                font-size: 40px;
+                letter-spacing: 2px;
+                color: white;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            h1:after {
+                content: ' ';
+                background: orange;
+                display: block;
+                height: 2px;
+                width: 250px;
+                margin: 10px auto;
+            }
+
+            .team .container p {
+                margin-bottom: 15px;
+            }
+
+            .row {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: 30px; 
+                margin-top: 30px;
+            }
+
+            .profile {
+                text-align: center;
+                width: 200px; 
+                margin: 0 10px; 
+            }
+
+            .img-box {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+                transition: transform 0.3s ease;
+            }
+
+            .img-box img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.3s ease;
+            }
+
+            .img-box:hover {
+                transform: scale(1.05);
+            }
+
+            .img-box ul {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 10px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .img-box:hover ul {
+                opacity: 1;
+            }
+
+            .img-box a {
+                color: white;
+                font-size: 18px;
+                padding: 8px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.6);
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+            }
+
+            .img-box a:hover {
+                background-color: rgba(255, 165, 0, 0.8);
+                transform: scale(1.2);
+            }
+
+            .img-box ul li {
+                list-style-type: none;
+            }
+
+            .profile h2, .profile h3, .profile p {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+
+            .profile h2 {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 15px;
+                padding: 5px 10px;
+                background-color: rgba(255, 165, 0, 0.8);
+                color: white;
+                border-radius: 5px;
+                text-shadow: 1px 1px 2px black, 0 0 25px orange, 0 0 5px darkorange;
+            }
+    
+            .profile h3 {
+                font-size: 14px;
+                font-weight: normal;
+            }
+
+            .row.two-profiles {
+                display: flex;
+                justify-content: center;
+                gap: 130px; 
+            }
