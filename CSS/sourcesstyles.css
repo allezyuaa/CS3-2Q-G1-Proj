@@ -92,27 +92,6 @@
 				margine-top:20px;
 			}
 
-			.content-section .button {
-				text-align: left; 
-				margin-top: 20px;
-			}
-
-
-			.content-section .button a {
-				background-color: orange;
-				padding: 12px 30px;
-				text-decoration: none;
-				color: black;
-				font-family: 'Poppins', sans-serif;
-				font-size: 25px;
-				letter-spacing: 1.5px;
-			}
-
-			.content-section .button a:hover {
-				background-color: white;
-				color: black;
-			}
-
 
 			.search-container {
     				display: flex;
